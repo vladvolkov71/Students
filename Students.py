@@ -119,10 +119,10 @@ student2.courses_in_progress += ['Python', 'Введение в программ
 
 # Инициализация лекторов.
 lecturer1 = Lecturer('Жуль', 'Верн')
-lecturer1.courses_attached += ['Python', 'Введение в программирование']
+lecturer1.courses_attached += ['Python', 'Введение в программирование', 'За 80 дней вокруг света (факультатив)']
 
 lecturer2 = Lecturer('Томас', 'де Торквемада')
-lecturer2.courses_attached += ['Введение в программирование', 'Python']
+lecturer2.courses_attached += ['Введение в программирование', 'Python', 'Методы инквизиции (факультатив)']
 
 # Инициализация ревьюверов.
 reviewer1 = Reviewer('Иван', 'Петров')
@@ -168,13 +168,13 @@ print(lecturer2)
 print(reviewer1)
 print(reviewer2)
 # Сравнение студентов по средней оценке за дз по всем предметам.
-print(
-    f"{student1.name} {student1.surname} < {student2.name} {student2.surname} - {student1 < student2}\n"
-    f"{student1.name} {student1.surname} == {student2.name} {student2.surname} - {student1 == student2}\n"
-    f"{student1.name} {student1.surname} > {student2.name} {student2.surname} - {student1 > student2}")
+print("Сравнение студентов:\n"
+      f"{student1.name} {student1.surname} < {student2.name} {student2.surname} - {student1 < student2}\n"
+      f"{student1.name} {student1.surname} == {student2.name} {student2.surname} - {student1 == student2}\n"
+      f"{student1.name} {student1.surname} > {student2.name} {student2.surname} - {student1 > student2}\n")
 
 # Сравнение лекторов по средней оценке за лекции по всем предметам.
-print(
-    f"{lecturer1.name} {lecturer1.surname} < {lecturer2.name} {lecturer2.surname} - {lecturer1 < lecturer2}\n"
-    f"{lecturer1.name} {lecturer1.surname} == {lecturer2.name} {lecturer2.surname} - {lecturer1 == lecturer2}\n"
-    f"{lecturer1.name} {lecturer1.surname} > {lecturer2.name} {lecturer2.surname} - {lecturer1 > lecturer2}")
+print("Сравнение преподавателей:\n",
+      f"{lecturer1.name} {lecturer1.surname} < {lecturer2.name} {lecturer2.surname} - {lecturer1 < lecturer2}\n"
+      f"{lecturer1.name} {lecturer1.surname} == {lecturer2.name} {lecturer2.surname} - {lecturer1 == lecturer2}\n"
+      f"{lecturer1.name} {lecturer1.surname} > {lecturer2.name} {lecturer2.surname} - {lecturer1 > lecturer2}\n")
