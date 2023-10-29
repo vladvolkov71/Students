@@ -167,14 +167,27 @@ print(lecturer1)
 print(lecturer2)
 print(reviewer1)
 print(reviewer2)
+
 # Сравнение студентов по средней оценке за дз по всем предметам.
-print("Сравнение студентов:\n"
-      f"{student1.name} {student1.surname} < {student2.name} {student2.surname} - {student1 < student2}\n"
-      f"{student1.name} {student1.surname} == {student2.name} {student2.surname} - {student1 == student2}\n"
-      f"{student1.name} {student1.surname} > {student2.name} {student2.surname} - {student1 > student2}\n")
+
+if student1 > student2:
+    print(
+        f" Студент {student1.name} {student1.surname} учится лучше, чем студент {student2.name} {student2.surname} \n")
+elif student1 < student2:
+    print(
+        f" Студент {student2.name} {student2.surname} учится лучше, чем студент {student1.name} {student1.surname} \n")
+else:
+    print(
+        f" Студенты {student1.name} {student1.surname} и {student2.name} {student2.surname} учатся одинаково успешно \n")
 
 # Сравнение лекторов по средней оценке за лекции по всем предметам.
-print("Сравнение преподавателей:\n",
-      f"{lecturer1.name} {lecturer1.surname} < {lecturer2.name} {lecturer2.surname} - {lecturer1 < lecturer2}\n"
-      f"{lecturer1.name} {lecturer1.surname} == {lecturer2.name} {lecturer2.surname} - {lecturer1 == lecturer2}\n"
-      f"{lecturer1.name} {lecturer1.surname} > {lecturer2.name} {lecturer2.surname} - {lecturer1 > lecturer2}\n")
+
+if lecturer1 > lecturer2:
+    print(
+        f" Лектор {lecturer1.name} {lecturer1.surname} преподает лучше, чем лектор {lecturer2.name} {lecturer2.surname} \n")
+elif lecturer1 > lecturer2:
+    print(
+        f" Лектор {lecturer2.name} {lecturer2.surname} преподает лучше, чем лектор {lecturer1.name} {lecturer1.surname} \n")
+else:
+    print(
+        f" Лекторы {lecturer1.name} {lecturer1.surname} и {lecturer2.name} {lecturer2.surname} преподают одинаково успешно \n")
